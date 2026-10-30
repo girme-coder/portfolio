@@ -18,7 +18,7 @@
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#education">Education</a>
-        <a href="#contacts">Contact</a>
+        <a href="#contact">Contact</a>
         <a href="projects.html">All Projects</a>
     </p>
 
@@ -89,11 +89,15 @@
 
     <h3>RAG Embedding Snippet</h3>
     <p>The core embedding function in my project code uses sentence-transformers to encode data locally:</p>
-    <pre><code>from sentence_transformers import SentenseTransformer
+    <pre><code>from sentence_transformers import SentenceTransformer
         model = SentenceTransformer('all-MiniLM-L6-v1.5')
         embeddings = model.encode(["Embedding local text data"])
-        print(embedding.shape)
+        print(embeddings.shape)
     </code></pre>
+
+    <h3 id="scraper-home">Python Web Scraper</h3>
+    <img src="images/project-scraper.png" alt="VS Code window showing Python web scraper code" width="400" height="250">
+    <p>A web scraping script built with Python, requests, and BeautifulSoup to parse and extract structured data from target websites.</p>
 
     <p><a href="projects.html">See all my projects →</a></p>
 
