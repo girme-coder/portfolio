@@ -16,5 +16,21 @@
     <h3>Non-Agentic RAG Pipeline</h3>
     <img src="images/project-rag.png" alt="diagram of local pipeline" width="400" height="250">
     <p>A local RAG system featuring full data ingestion, local embedding via sentence-transformers, Qdrand vector database, and local generation using llama3.2:3b.</p>
+
+    <h4>How I built it</h4>
+    <ol>
+        <li>Parsed and chunked local raw documents for data ingestion.</li>
+        <li>Generated local vector embeddings using sentence-transformers.</li>
+        <li>Stored and indexed embedding vectors inside a Qdrant database container.</li>
+        <li>Integrated Llama 3.2:3B via Ollama for local response generation.</li>
+    </ol>
+
+    <h4>Technologies Used</h4>
+    <ul>
+        <li>Python</li>
+        <li>Sentence Transformers</li>
+        <li>Qdrant Vector DB</li>
+        <li>Ollama / Llama 3.2</li>
+    </ul>
 </body>
 </html>
