@@ -12,7 +12,12 @@
     <hr>
 
     <h2 id="about">About Me</h2>
-    <p>I am a 3rd year Software Engineering student. I focus on AI applications, system design patterns, and pipelines using Python and C++.</p>
+    <p>I am a 3<sup>rd</sup> year <strong>Software Engineering</strong> student. I <em>really</em> focus on AI applications, system design patterns, and pipelines using Python and C++. My current goal is to <mark>architect scalable local AI pipelines</mark></p>
+    <p>Languages I use: <b>Python</b> for AI workflows,<b>C++</b> for system study, and <i> a little</i> java.</p>
+    <p>Fun fact: I drink 2 littres of H<sub>2</sub>O while debugging my local programs.</p>
+
+    <h2>What Inspires me</h2>
+    <blockquote>"The best way to predict the future is to invent it."</blockquote> Alan Kay
 
     <hr>
 
@@ -24,6 +29,14 @@
     <h2 id="projects">Projects</h2>
     <h3>Non-Agentic RAG Pipeline</h3>
     <p>A local RAG system featuring full data ingestion, local embedding via sentence-transformers, Qdrant vector database, and local generation using llama3.2:3b.</p>
+
+    <h3>RAG Embedding Snippet</h3>
+    <p>The core embedding function in my project code uses sentence-transformers to encode data locally:</p>
+    <pre><code>from sentence_transformers import SentenseTransformer
+        model = SentenceTransformer('all-MiniLM-L6-v1.5')
+        embeddings = model.encode(["Embedding local text data"])
+        print(embedding.shape)
+    </code></pre>
 
     <hr>
 
