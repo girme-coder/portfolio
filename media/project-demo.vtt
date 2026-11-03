@@ -1,0 +1,22 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.000
+Step 1: Launching the Local RAG System using python rag.py.
+
+00:00:04.000 --> 00:00:08.000
+The system starts running in the terminal.
+
+00:00:08.000 --> 00:00:12.000
+Step 2: The system is ready to receive questions from the user.
+
+00:00:12.000 --> 00:00:16.000
+Step 3: The user types a question into the terminal.
+
+00:00:16.000 --> 00:00:21.000
+The Local RAG System processes the question and searches its knowledge base.
+
+00:00:21.000 --> 00:00:26.000
+Step 4: The system generates and displays an answer in the terminal.
+
+00:00:26.000 --> 00:00:28.000
+The Local RAG System successfully answers the user's question.
