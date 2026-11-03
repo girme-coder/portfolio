@@ -11,6 +11,7 @@
 </head>
 <body>
 <header>
+    <canvas id="logo" width="120" height="120">Girmay Meresu logo</canvas>
     <h1>Girmay Meresu</h1>
 
     <img src="images/profile.jpg" alt="profile pic" title="Girmay Meresu" width="200" height="200">
@@ -316,5 +317,25 @@
     <p>&copy; 2026 Girmay Meresu. All rights reserved.</p>
     <p>Last updated: <time datetime="2026-11-05">5 November 2026</time></p>
 </footer>
+
+<script>
+const canvas = document.getElementById('logo');
+const ctx = canvas.getContext('2d');
+
+ctx.fillStyle = "#1f5fa8";
+ctx.fillRect(0, 0, 120, 120);
+
+ctx.beginPath();
+ctx.arc(60, 60, 45, 0, 2 * Math.PI);
+ctx.fillStyle = "white";
+ctx.fill();
+
+ctx.fillStyle = "#1f5fa8";
+ctx.font = "bold 36px Arial";
+ctx.textAlign = "center";
+ctx.textBaseline = "middle";
+ctx.fillText("GM", 60, 62);
+</script>
+
 </body>
 </html>
