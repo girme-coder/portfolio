@@ -3,86 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects Portfolio of Girmay Meresu, Software Engineering student and AI developer.">
+    <meta name="keywords" content="Girmay Meresu, projects, Python, RAG pipeline, Web Scraper, HTML">
+    <meta name="author" content="Girmay Meresu">
     <title>Projects | Girmay Meresu</title>
 
     <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
-    <p><a href="index.html">← Back to Home</a></p>
+<header>
+    <nav>
+        <p><a href="index.html">← Back to Home</a></p>
+    </nav>
 
     <h1>My Projects</h1>
     <p>Details of my projects I have built. Summary table below.</p>
+</header>
+<main>
+    <section>
+        <table border="1" cellpadding="8" cellspacing="0">
+            <caption>Project Summary</caption>
+            <thead>
+                <tr>
+                    <th>Project</th>
+                    <th>Language</th>
+                    <th>Year</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Non-Agentic RAG Pipeline</td>
+                    <td>Python</td>
+                    <td>2026</td>
+                    <td><a href="index.html#projects">View Project</a></td>
+                </tr>
+                <tr>
+                    <td>Python Web Scraper</td>
+                    <td>Python</td>
+                    <td>2026</td>
+                    <td><a href="#scraper-detail">View Project</a></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="3">Total projects</th>
+                    <th>2</th>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+    <article> 
+        <h3 id="rag-home">Non-Agentic RAG Pipeline</h3>
+        <img src="images/project-rag.png" alt="diagram of local pipeline" width="400" height="250">
+        <p>A local RAG system featuring full data ingestion, local embedding via sentence-transformers, Qdrand vector database, and local generation using llama3.2:3b.</p>
 
-    <table border="1" cellpadding="8" cellspacing="0">
-        <caption>Project Summary</caption>
-        <thead>
-            <tr>
-                <th>Project</th>
-                <th>Language</th>
-                <th>Year</th>
-                <th>Link</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Non-Agentic RAG Pipeline</td>
-                <td>Python</td>
-                <td>2026</td>
-                <td><a href="index.html#projects">View Project</a></td>
-            </tr>
-            <tr>
-                <td>Python Web Scraper</td>
-                <td>Python</td>
-                <td>2026</td>
-                <td><a href="#scraper-detail">View Project</a></td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <th colspan="3">Total projects</th>
-                <th>2</th>
-            </tr>
-        </tfoot>
-    </table>
+        <h4>How I built it</h4>
+        <ol>
+            <li>Parsed and chunked local raw documents for data ingestion.</li>
+            <li>Generated local vector embeddings using sentence-transformers.</li>
+            <li>Stored and indexed embedding vectors inside a Qdrant database container.</li>
+            <li>Integrated Llama 3.2:3B via Ollama for local response generation.</li>
+        </ol>
 
-    <h3>Non-Agentic RAG Pipeline</h3>
-    <img src="images/project-rag.png" alt="diagram of local pipeline" width="400" height="250">
-    <p>A local RAG system featuring full data ingestion, local embedding via sentence-transformers, Qdrand vector database, and local generation using llama3.2:3b.</p>
+        <h4>Technologies Used</h4>
+        <ul>
+            <li>Python</li>
+            <li>Sentence Transformers</li>
+            <li>Qdrant Vector DB</li>
+            <li>Ollama / Llama 3.2</li>
+        </ul>
+    </article>
 
-    <h4>How I built it</h4>
-    <ol>
-        <li>Parsed and chunked local raw documents for data ingestion.</li>
-        <li>Generated local vector embeddings using sentence-transformers.</li>
-        <li>Stored and indexed embedding vectors inside a Qdrant database container.</li>
-        <li>Integrated Llama 3.2:3B via Ollama for local response generation.</li>
-    </ol>
+    <article>
+        <h3 id="scraper-home">Python Web Scraper</h3>
+        <img src="images/project-scraper.png" alt="VS Code window showing Python web scraper code" width="400" height="250">
+        <p>A web scraping script built with Python, requests, and BeautifulSoup to parse and extract structured data from target websites.</p>
 
-    <h4>Technologies Used</h4>
-    <ul>
-        <li>Python</li>
-        <li>Sentence Transformers</li>
-        <li>Qdrant Vector DB</li>
-        <li>Ollama / Llama 3.2</li>
-    </ul>
+        <h4>How I built it</h4>
+        <ol>
+            <li>Configured HTTP headers and requests session with timeout handling.</li>
+            <li>Sent GET requests to target URLs with error checking (`raise_for_status`).</li>
+            <li>Parsed raw HTML responses using BeautifulSoup.</li>
+            <li>Extracted target elements (such as movie titles and grid cards) using CSS classes.</li>
+        </ol>
 
-    <hr>
-    <h3 id="scraper-detail">Python Web Scraper</h3>
-    <img src="images/project-scraper.png" alt="VS Code window showing Python web scraper code" width="400" height="250">
-    <p>A web scraping script built with Python, requests, and BeautifulSoup to parse and extract structured data from target websites.</p>
-
-    <h4>How I built it</h4>
-    <ol>
-        <li>Configured HTTP headers and requests session with timeout handling.</li>
-        <li>Sent GET requests to target URLs with error checking (`raise_for_status`).</li>
-        <li>Parsed raw HTML responses using BeautifulSoup.</li>
-        <li>Extracted target elements (such as movie titles and grid cards) using CSS classes.</li>
-    </ol>
-
-    <h4>Technologies Used</h4>
-    <ul>
-        <li>Python</li>
-        <li>Requests Library</li>
-        <li>BeautifulSoup (bs4)</li>
-    </ul>
+        <h4>Technologies Used</h4>
+        <ul>
+            <li>Python</li>
+            <li>Requests Library</li>
+            <li>BeautifulSoup (bs4)</li>
+        </ul>
+    </article>
+</main>
+<footer>
+    <p>Copyright 2026 Girmay Meresu. All rights reserved.</p>
+</footer>
 </body>
 </html>
